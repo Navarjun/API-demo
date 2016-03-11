@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Flickr | API Demo</title>
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.min.css">
   <script src="/scripts/lib/jquery-1.12.1.min.js" charset="utf8"></script>
   <script src="/bootstrap/js/bootstrap.min.js" charset="utf8"></script>
-  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="/scripts/lib/d3.min.js" charset="utf-8"></script>
+  <script src="/scripts/lib/OAuthSimple.js" charset="utf-8"></script>
   <script src="/scripts/flickr.js" charset="utf8"></script>
 </head>
 
 <body>
   <div class="col-md-8 col-md-offset-2">
-    <h1 class="col-md-12">API Demo</h1>
-    <p>
-      <pre>
-        Amazing-ness
+    <h1 class="col-md-12">Flickr | API Demo</h1>
+    <p id='searchAPI'>
+      <h3 class='col-md-12' id='searchAPI'>Flickr Search for tags:</h3>
+      <p class='col-md-12 text-muted' id='searchAPIUrl'>The URL we hit will appear here</p>
+      <pre id='searchAPIResponse'>
+        The RESPONSE will appear here
+      </pre>
+    </p>
+    <p id='infoAPI'>
+      <h3 class='col-md-12' id='infoAPI'>Flickr info for imageId:</h3>
+      <p class='col-md-12 text-muted' id='infoAPIUrl'>The URL we hit will appear here</p>
+      <pre id='infoAPIResponse'>
+        The RESPONSE will appear here
       </pre>
     </p>
   </div>
